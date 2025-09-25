@@ -1,0 +1,42 @@
+Start testing: Sep 25 21:21 MSK
+----------------------------------------------------------
+1/1 Testing: VowelCounterTests
+1/1 Test: VowelCounterTests
+Command: "/d/OOA/Homework #1/build/tests.exe"
+Directory: /d/OOA/Homework #1/build
+"VowelCounterTests" start time: Sep 25 21:21 MSK
+Output:
+----------------------------------------------------------
+[==========] Running 8 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 8 tests from VowelCounterTest
+[ RUN      ] VowelCounterTest.EmptyString
+[       OK ] VowelCounterTest.EmptyString (0 ms)
+[ RUN      ] VowelCounterTest.NoVowels
+[       OK ] VowelCounterTest.NoVowels (0 ms)
+[ RUN      ] VowelCounterTest.OnlyVowels
+[       OK ] VowelCounterTest.OnlyVowels (0 ms)
+[ RUN      ] VowelCounterTest.MixedString
+[       OK ] VowelCounterTest.MixedString (0 ms)
+[ RUN      ] VowelCounterTest.RepeatedVowels
+[       OK ] VowelCounterTest.RepeatedVowels (0 ms)
+[ RUN      ] VowelCounterTest.WithSpaces
+[       OK ] VowelCounterTest.WithSpaces (0 ms)
+[ RUN      ] VowelCounterTest.SingleVowel
+[       OK ] VowelCounterTest.SingleVowel (0 ms)
+[ RUN      ] VowelCounterTest.LongString
+[       OK ] VowelCounterTest.LongString (0 ms)
+[----------] 8 tests from VowelCounterTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 8 tests.
+<end of output>
+Test time =   0.34 sec
+----------------------------------------------------------
+Test Passed.
+"VowelCounterTests" end time: Sep 25 21:21 MSK
+"VowelCounterTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 25 21:21 MSK

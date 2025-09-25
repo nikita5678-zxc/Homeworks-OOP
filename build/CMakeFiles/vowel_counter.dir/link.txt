@@ -1,0 +1,2 @@
+/mingw64/bin/ar.exe qc libvowel_counter.a CMakeFiles/vowel_counter.dir/src/vowel_counter.cpp.o
+/mingw64/bin/ranlib.exe libvowel_counter.a
