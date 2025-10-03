@@ -1,51 +1,44 @@
 #include <gtest/gtest.h>
 #include "../include/vowel_counter.h"
 
-int return_count_vowel_letters(string s);
 
-class VowelCounterTest : public ::testing::Test {
-protected:
-    void SetUp() override {
-    }
-};
-
-TEST_F(VowelCounterTest, EmptyString) {
+TEST(VowelCounterTest, EmptyString) {
     string input = "";
     int expected = 0;
     EXPECT_EQ(return_count_vowel_letters(input), expected);
 }
 
-TEST_F(VowelCounterTest, NoVowels) {
+TEST(VowelCounterTest, NoVowels) {
     string input = "bcdfghjklmnpqrstvwxyz";
     int expected = 0;
     EXPECT_EQ(return_count_vowel_letters(input), expected);
 }
 
-TEST_F(VowelCounterTest, OnlyVowels) {
+TEST(VowelCounterTest, OnlyVowels) {
     string input = "aeiou";
     int expected = 5;
     EXPECT_EQ(return_count_vowel_letters(input), expected);
 }
 
-TEST_F(VowelCounterTest, MixedString) {
+TEST(VowelCounterTest, MixedString) {
     string input = "hello world";
     int expected = 3; // e, o, o
     EXPECT_EQ(return_count_vowel_letters(input), expected);
 }
 
-TEST_F(VowelCounterTest, RepeatedVowels) {
+TEST(VowelCounterTest, RepeatedVowels) {
     string input = "aaeeiioouu";
     int expected = 10;
     EXPECT_EQ(return_count_vowel_letters(input), expected);
 }
 
-TEST_F(VowelCounterTest, WithSpaces) {
+TEST(VowelCounterTest, WithSpaces) {
     string input = "this is a test";
     int expected = 4; // i, i, a, e
     EXPECT_EQ(return_count_vowel_letters(input), expected);
 }
 
-TEST_F(VowelCounterTest, SingleVowel) {
+TEST(VowelCounterTest, SingleVowel) {
     string input = "b";
     int expected = 0;
     EXPECT_EQ(return_count_vowel_letters(input), expected);
@@ -55,7 +48,7 @@ TEST_F(VowelCounterTest, SingleVowel) {
     EXPECT_EQ(return_count_vowel_letters(input), expected);
 }
 
-TEST_F(VowelCounterTest, LongString) {
+TEST(VowelCounterTest, LongString) {
     string input = "abcdefghijklmnopqrstuvwxyz";
     int expected = 5; // a, e, i, o, u
     EXPECT_EQ(return_count_vowel_letters(input), expected);
